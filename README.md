@@ -4,6 +4,6 @@
 
 View site：https://uhikochen.github.io/ACW-Search-Layout/
 
-![image](https://github.com/UhikoChen/ACW-Search-Layout/blob/main/Images/design-index.png)
+![image](https://github.com/UhikoChen/ACW-Search-Layout/blob/main/Image/design-index.png)
 
-![image](https://github.com/UhikoChen/ACW-Search-Layout/blob/main/Images/design-product.png)
+![image](https://github.com/UhikoChen/ACW-Search-Layout/blob/main/Image/design-product.png)
