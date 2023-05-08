@@ -1,0 +1,188 @@
+body{
+    background-color: #faf9f7;
+}
+
+/* search-content */
+.search-content{
+    margin-top: 140px;
+    padding: 20px 0;
+}
+
+.content-title{
+    font-size: 42pt;
+    font-weight: 600;
+    padding: 20px 0;
+}
+
+/* 搜尋區塊 */
+.search-wrapper{
+    display: grid;
+    grid-template-columns: auto 70px;
+    column-gap: 40px;
+    padding: 20px 0;
+}
+
+.search-wrapper > .search-bar{
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid #cac9c9;
+    border-radius: 50px;
+    padding: 10px 0;
+}
+
+.search-wrapper > .search-bar > .search-hint{
+    color: #8d8d90;
+    padding-left: 40px;
+    font-size: 14pt;
+}
+
+.search-wrapper > .search-bar > .search-list{
+    padding: 0 10px;
+}
+
+.search-wrapper > .search-bar > .search-list > li{
+    background-color: #faf9f7;
+    padding: 0 20px;
+    border-radius: 50px;
+    margin: 0 10px;
+}
+
+.search-wrapper > .search-bar > .search-list > li.active{
+    background-color: #080b13;
+    padding: 15px;
+}
+
+.search-wrapper > .search-bar > .search-list > li.active > a{
+    color: white;
+    padding: 0 5px;
+}
+
+.search-wrapper > .search-btn{
+    color: white;
+    background-color: #080b13;
+    border-radius: 50%;
+}
+
+.search-wrapper > .search-btn > a > span{
+    font-size: 28pt;
+    position: relative;
+    top: 16px;
+    left: 16px;
+    display: block;
+    color: white;
+}
+
+/* main-container */
+.main-content{
+    padding: 20px 0;
+}
+
+.search-result-tool{
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: space-between;
+    padding: 10px 0;
+}
+
+.search-result-tool > .found-count{
+    color: #818285;
+    font-weight: 500;
+}
+
+.search-result-tool > .search-sort{
+    color: #818285;
+    font-weight: 500;
+}
+
+.search-result-tool > .search-sort > .sort-items > a{
+    color: #818285;
+    padding: 0 20px;
+}
+
+.search-result-tool > .search-sort > .sort-items.active > a{
+    color: #090c14;
+    padding: 0 20px;
+}
+
+.search-result-tool > .search-sort > .sort-items:last-child > a{
+    padding: 0 0 0 20px;
+}
+
+.search-result-tool > .search-sort > .sort-items.active:last-child > a{
+    padding: 0 0 0 20px;
+}
+
+/* 產品內容 */
+.product-content{
+    display: grid;
+    grid-template-columns: 300px auto;
+    column-gap: 25px;
+    padding: 20px 0;
+}
+
+.product-content > .product-classified > .classified-items{
+    background-color: #f1f1ef;
+    padding: 10px 20px;
+    margin-bottom: 20px;
+}
+
+.product-content > .product-classified > .classified-items > .classified-title{
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: space-between;
+    padding: 10px 0;
+    font-weight: 500;
+    font-size: 14pt;
+}
+
+.product-content > .product-classified > .classified-items > ul{
+    display: none;
+    padding: 10px 0;
+}
+
+.product-content > .product-classified > .classified-items > ul.active{
+    display: block;
+}
+
+
+.product-content > .product-classified > .classified-items > ul > li{
+    display: block;
+    padding: 10px 0;
+}
+
+.product-content > .product-classified > .classified-items > ul > li > span{
+    padding-left: 15px;
+}
+
+
+.product-content > .product-list{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    column-gap: 3px;
+}
+
+.product-content > .product-list > .product > .product-img > img{
+    width: 100%;
+}
+
+.product-content > .product-list > .product > .product-info {
+    padding: 20px 0;
+}
+
+
+.product-content > .product-list > .product > .product-info > .product-title{
+    display: block;
+    color: #999a9c;
+    font-size: 16pt;
+    text-align: center;
+    padding: 5px 0;
+}
+
+.product-content > .product-list > .product > .product-info > .product-price{
+    color: #080b13;
+    font-size: 20pt;
+    text-align: center;
+    padding: 5px 0;
+}

@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- CSS -->
+    <link rel="stylesheet" type="text/css" href="css/menu.css?12" />
+    <link rel="stylesheet" type="text/css" href="css/main.css?12" />
+
+    <!-- icon -->
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/fork-awesome@1.2.0/css/fork-awesome.min.css"
+        integrity="sha256-XoaMnoYC5TH6/+ihMEnospgm0J1PM/nioxbOUdnM8HY=" crossorigin="anonymous" />
+
+    <!-- 字體 -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap"
+        rel="stylesheet" />
+
+    <!-- JQ -->
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.0/jquery.min.js"></script>
+
+    <!-- 標題 -->
+    <title>ACW* Search</title>
+</head>
+
+<body>
+    <!-- 選單 -->
+    <nav class="nav-main">
+        <!-- 廣告區塊 -->
+        <div class="nav-ad">
+            <span class="add-fadeout">ERY · FREE </span>
+            <span>
+                DELIVERY OVER $99 · 100 DAYS RETURN POLICY · WORLDWIDE DELIVERY · FREE DELIVERY OVER $99 · 100DAYS
+                RETURN POLICY · WORLDWIDE DELIVERY · FREE DELIVERY OVER $99 · 100 DAYS RETURN POLICY · WORLDWIDE
+                DELIVERY · FREE DELIVERY OVER $99 · 100 DAYS RETURN POLICY ·
+            </span>
+            <span class="add-fadein"> WORLDWIDE</span>
+        </div>
+
+        <!-- 選單區塊 -->
+        <div class="container">
+            <div class="nav-wrapper">
+                <a class="logo" href="">
+                    <img class="logo-img" src="assets/logo.svg" />
+                </a>
+                <ul class="nav-list">
+                    <li class="nav-items">
+                        <a href="">Category</a> <i class="fa fa-chevron-down" aria-hidden="true"></i>
+                    </li>
+                    <li class="nav-items">
+                        <a href="">Collection</a><i class="fa fa-chevron-down" aria-hidden="true"></i>
+                    </li>
+                    <li class="nav-items">
+                        <a href="">Focus</a><i class="fa fa-chevron-down" aria-hidden="true"></i>
+                    </li>
+                    <li class="nav-items"><a href="">Service Point</a></li>
+                    <li class="nav-items"><a href="">Assistance</a></li>
+                    <li class="nav-items"><a href="">Contacts</a></li>
+                </ul>
+                <div class="nav-btn">
+                    <a class="favorite-btn" href="">
+                        <span class="material-symbols-outlined"> favorite </span>
+                    </a>
+                    <a class="shopping-bag-btn" href="">
+                        <span class="material-symbols-outlined"> shopping_bag </span>
+                    </a>
+                    <a class="person-btn" href="">
+                        <span class="material-symbols-outlined"> person </span>
+                        <i class="fa fa-chevron-down down-arrow-btn" aria-hidden="true"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- 搜尋內容區塊 -->
+    <div class="search-content">
+        <div class="container">
+            <div class="content-title">ACW* Search</div>
+            <div class="search-wrapper">
+                <div class="search-bar">
+                    <div class="search-hint">Write something...</div>
+                    <ul class="search-list">
+                        <li><a href="">All fields</a></li>
+                        <li class="active"><a href="">Clothing</a></li>
+                        <li><a href="">Footwear</a></li>
+                        <li><a href="">Accessories</a></li>
+                    </ul>
+                </div>
+                <div class="search-btn">
+                    <a href=""><span class="material-symbols-outlined"> search </span></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 中間內容區塊 -->
+    <div class="main-content">
+        <div class="container">
+            <div class="search-result-tool">
+                <div class="found-count">2480 Items Found</div>
+                <ul class="search-sort">
+                    <li class="sort-items"><a href="">Grid View</a></li>
+                    <li class="sort-items active"><a href="">List View</a></li>
+                    <li class="sort-items">
+                        <a href="">Sort</a><i class="fa fa-chevron-down" aria-hidden="true"></i>
+                    </li>
+                </ul>
+            </div>
+            <div class="product-content">
+                <div class="product-classified">
+                    <div class="classified-items">
+                        <div class="classified-title">
+                            <span>Categories</span>
+                            <i class="fa fa-chevron-down" aria-hidden="true" onclick="OnSoltBtnClick('categories')"></i>
+                        </div>
+                        <ul class="solt categories active">
+                            <li><input type="checkbox" name="" value="" /><span>Coats</span></li>
+                            <li><input type="checkbox" name="" value="" /><span>Denim</span></li>
+                            <li><input type="checkbox" name="" value="" /><span>Jackets</span></li>
+                            <li><input type="checkbox" name="" value="" /><span>Pants</span></li>
+                            <li><input type="checkbox" name="" value="" /><span>T-Shirts</span></li>
+                            <li><input type="checkbox" name="" value="" /><span>Suits</span></li>
+                        </ul>
+                    </div>
+
+                    <div class="classified-items">
+                        <div class="classified-title">
+                            <span>Occasion</span>
+                            <i class="fa fa-chevron-down" aria-hidden="true" onclick="OnSoltBtnClick('occasion')"></i>
+                        </div>
+                        <ul class="solt occasion">
+                            <li><input type="checkbox" name="" value="" /><span>Coats</span></li>
+                            <li><input type="checkbox" name="" value="" /><span>Denim</span></li>
+                            <li><input type="checkbox" name="" value="" /><span>Jackets</span></li>
+                            <li><input type="checkbox" name="" value="" /><span>Pants</span></li>
+                            <li><input type="checkbox" name="" value="" /><span>T-Shirts</span></li>
+                            <li><input type="checkbox" name="" value="" /><span>Suits</span></li>
+                        </ul>
+                    </div>
+
+                    <div class="classified-items">
+                        <div class="classified-title">
+                            <span>Size</span>
+                            <i class="fa fa-chevron-down" aria-hidden="true" onclick="OnSoltBtnClick('size')"></i>
+                        </div>
+                        <ul class="solt size">
+                            <li><input type="checkbox" name="" value="" /><span>Coats</span></li>
+                            <li><input type="checkbox" name="" value="" /><span>Denim</span></li>
+                            <li><input type="checkbox" name="" value="" /><span>Jackets</span></li>
+                            <li><input type="checkbox" name="" value="" /><span>Pants</span></li>
+                            <li><input type="checkbox" name="" value="" /><span>T-Shirts</span></li>
+                            <li><input type="checkbox" name="" value="" /><span>Suits</span></li>
+                        </ul>
+                    </div>
+
+                    <div class="classified-items">
+                        <div class="classified-title">
+                            <span>Price</span>
+                            <i class="fa fa-chevron-down" aria-hidden="true" onclick="OnSoltBtnClick('price')"></i>
+                        </div>
+                        <ul class="solt price">
+                            <li><input type="checkbox" name="" value="" /><span>Coats</span></li>
+                            <li><input type="checkbox" name="" value="" /><span>Denim</span></li>
+                            <li><input type="checkbox" name="" value="" /><span>Jackets</span></li>
+                            <li><input type="checkbox" name="" value="" /><span>Pants</span></li>
+                            <li><input type="checkbox" name="" value="" /><span>T-Shirts</span></li>
+                            <li><input type="checkbox" name="" value="" /><span>Suits</span></li>
+                        </ul>
+                    </div>
+
+                    <div class="classified-items">
+                        <div class="classified-title">
+                            <span>Colour</span>
+                            <i class="fa fa-chevron-down" aria-hidden="true" onclick="OnSoltBtnClick('colour')"></i>
+                        </div>
+                        <ul class="solt colour">
+                            <li><input type="checkbox" name="" value="" /><span>Coats</span></li>
+                            <li><input type="checkbox" name="" value="" /><span>Denim</span></li>
+                            <li><input type="checkbox" name="" value="" /><span>Jackets</span></li>
+                            <li><input type="checkbox" name="" value="" /><span>Pants</span></li>
+                            <li><input type="checkbox" name="" value="" /><span>T-Shirts</span></li>
+                            <li><input type="checkbox" name="" value="" /><span>Suits</span></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <ul class="product-list">
+                    <li class="product">
+                        <a class="product-img" href="product.html"><img src="assets/photo-1.png" /></a>
+                        <div class="product-info">
+                            <a class="product-title" href="product.html">Suilven Quilted Jacket</a>
+                            <div class="product-price">€1,192.00</div>
+                        </div>
+                    </li>
+
+                    <li class="product">
+                        <a class="product-img" href="product.html"><img src="assets/photo-2.png" /></a>
+                        <div class="product-info">
+                            <a class="product-title" href="product.html">Fuse Double Breasted Blazer</a>
+                            <div class="product-price">€747.00</div>
+                        </div>
+                    </li>
+
+                    <li class="product">
+                        <a class="product-img" href="product.html"><img src="assets/photo-3.png" /></a>
+                        <div class="product-info">
+                            <a class="product-title" href="product.html">Diamond Tailored Blazer</a>
+                            <div class="product-price">€599.00</div>
+                        </div>
+                    </li>
+
+                    <li class="product">
+                        <a class="product-img" href="product.html"><img src="assets/photo-4.png" /></a>
+                        <div class="product-info">
+                            <a class="product-title" href="">Diamond Tailored Blazer</a>
+                            <div class="product-price">€747.00</div>
+                        </div>
+                    </li>
+
+                    <li class="product">
+                        <a class="product-img" href="product.html"><img src="assets/photo-5.png" /></a>
+                        <div class="product-info">
+                            <a class="product-title" href="product.html">Diamond Tailored Blazer</a>
+                            <div class="product-price">€1,192.00</div>
+                        </div>
+                    </li>
+
+                    <li class="product">
+                        <a class="product-img" href="product.html"><img src="assets/photo-6.png" /></a>
+                        <div class="product-info">
+                            <a class="product-title" href="product.html">Diamond Tailored Blazer</a>
+                            <div class="product-price">€747.00</div>
+                        </div>
+                    </li>
+
+                    <li class="product">
+                        <a class="product-img" href="product.html"><img src="assets/photo-7.png" /></a>
+                        <div class="product-info">
+                            <a class="product-title" href="product.html">Diamond Tailored Blazer</a>
+                            <div class="product-price">€599.00</div>
+                        </div>
+                    </li>
+
+                    <li class="product">
+                        <a class="product-img" href="product.html"><img src="assets/photo-8.png" /></a>
+                        <div class="product-info">
+                            <a class="product-title" href="product.html">Diamond Tailored Blazer</a>
+                            <div class="product-price">€1,192.00</div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function OnSoltBtnClick(clickItem) {
+            const activeSolt = document.getElementsByClassName(clickItem);
+
+            for (let i = 0; i < activeSolt.length; i++) {
+                activeSolt[i].classList.add("active");
+            }
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,116 @@
+*{
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif; 
+}
+
+body{
+    margin: 0;
+    padding: 0;
+}
+
+ul{
+    padding: 0;
+    margin: 0;
+}
+
+li{
+    display: inline-block;
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+    color: #080b13
+}
+
+
+i.fa{
+    padding: 0 0 0 10px;
+    color: #87898b;
+}
+
+i.fa:hover{
+    cursor: pointer;
+}
+
+.container{
+    max-width: 1600px;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
+.nav-main{
+    position: fixed;
+    top: 0;
+    border-bottom: 1px solid #cac9c9;
+    z-index: 999;
+    background-color: #faf9f7;
+    width: 100%;
+}
+
+.nav-ad{
+    background-color: #080b13;
+    padding: 12px 0;
+}
+
+.nav-ad > span{
+    font-size: 10pt;
+    color: #b5b6b8;
+}
+
+.nav-ad > span.add-fadeout{
+    /* 設定漸層角度及顏色 */
+    background-image: linear-gradient(45deg, #080b13, #b5b6b8 100%); 
+    -webkit-background-clip: text; /* 背景裁剪成文字的前景色 */
+    background-clip: text;
+    color: transparent;
+}
+
+.nav-ad > span.add-fadein{
+    background-image: linear-gradient(45deg, #b5b6b8, #080b13 100%);
+    -webkit-background-clip: text; /* 背景裁剪成文字的前景色 */
+    background-clip: text;
+    color: transparent;
+}
+
+.nav-wrapper{
+    display: grid;
+    grid-template-columns: 100px auto auto;
+    column-gap: 15px;
+    align-items: center;
+    padding: 20px 0;
+    background-color: #faf9f7;
+}
+
+.nav-wrapper > .logo > .logo-img{
+    width: 100%;
+}
+
+.nav-wrapper > .nav-list > .nav-items{
+    padding: 0 20px;
+    font-weight: 500;
+}
+
+.nav-wrapper > .nav-btn{
+    margin: 0 0 0 auto;
+}
+
+.nav-wrapper > .nav-btn > a{
+    display: inline-block;
+    padding: 10px 10px;
+}
+
+.nav-wrapper > .nav-btn > a:last-child{
+    padding: 10px 0px 10px 10px;
+}
+
+.nav-wrapper > .nav-btn > a > span{
+    font-size: 20pt;
+    position: relative;
+    top: 4px;
+}
+
+.nav-wrapper > .nav-btn > .person-btn > .down-arrow-btn{
+    position: relative;
+    top: -4px;
+}
